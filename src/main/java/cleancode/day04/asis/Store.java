@@ -3,8 +3,9 @@ package cleancode.day04.asis;
 import cleancode.day04.asis.model.Order;
 import java.util.logging.Logger;
 
-public class StoreAsis {
+public class Store {
     private final Logger log = Logger.getLogger(this.getClass().getName());
+
     public boolean validateOrder(Order order) {
         if (order.getItems().size() == 0) {
             log.info("주문 항목이 없습니다.");
